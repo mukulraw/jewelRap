@@ -1,0 +1,225 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_order"
+    tools:context="com.quixom.jewelrap.PlaceOrder">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_loose"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:visibility="gone"/>
+
+
+    <io.codetail.widget.RevealFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/reveallayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/linForWholesaler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_title_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:gravity="center"
+                    android:text="Shape"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_title_size"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_shape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:padding="@dimen/layout_margin_5dp"
+                    android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+
+               <!-- <TextView
+                    android:id="@+id/tv_title_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:gravity="center"
+                    android:text="Size"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_title_size"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:background="@color/white"></android.support.v7.widget.RecyclerView>-->
+
+
+                <TextView
+                    android:id="@+id/tv_title_certificate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:gravity="center"
+                    android:text="Certification"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_title_size"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_certificate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:paddingTop="@dimen/layout_margin"
+                    android:paddingBottom="@dimen/layout_margin"
+
+                    android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+
+                <TextView
+                    android:id="@+id/tv_title_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:gravity="center"
+                    android:text="Color"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_title_size"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:paddingTop="@dimen/layout_margin"
+                    android:paddingBottom="@dimen/layout_margin"
+                    android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+
+                <TextView
+                    android:id="@+id/tv_title_purity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:gravity="center"
+                    android:text="Purity"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_title_size"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_purity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:paddingTop="@dimen/layout_margin"
+                    android:paddingBottom="@dimen/layout_margin"
+                    android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+
+                <TextView
+                    android:id="@+id/tv_title_size_carat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:gravity="center"
+                    android:text="Size"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_title_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/ll_layout_size_carat"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="5">
+
+
+                    <EditText
+                        android:id="@+id/edit_text_size_from"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:hint="Any"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/text_item_size" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="To"
+                        android:textSize="@dimen/text_item_size" />
+
+                    <EditText
+                        android:id="@+id/edit_text_size_to"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:hint="Any"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/text_item_size" />
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:textColor="@color/white"
+                    android:background="@drawable/ripple"
+                    android:text="Search"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+        <include layout="@layout/searchbyid_layout" />
+    </io.codetail.widget.RevealFrameLayout>
+
+</RelativeLayout>

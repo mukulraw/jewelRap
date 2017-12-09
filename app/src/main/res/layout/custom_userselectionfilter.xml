@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/light_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_margin="@dimen/layout_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Send Enquiry To. "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            />
+        <ImageView
+            android:id="@+id/imgSubmit"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_checkdialog"/>
+        <ImageView
+            android:id="@+id/imgCancel"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_closedialog"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/layout_margin_5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1.5"
+
+            android:id="@+id/linearWholesaler">
+
+            <CheckBox
+                android:id="@+id/cb_Wholesaler"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+
+                />
+          <!--  <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="3dp"
+                android:src="@drawable/ic_search_dialog"/>-->
+            <TextView
+                android:id="@+id/textviewSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="Wholesaler"
+                android:textSize="@dimen/text_order_title_size"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/text_color_default"
+                android:clickable="false"
+              />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1.5"
+            android:id="@+id/linearBroker">
+
+            <CheckBox
+                android:id="@+id/cb_Broker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                />
+            <TextView
+                android:id="@+id/textviewFilter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="Broker"
+                android:textSize="@dimen/text_order_title_size"
+                android:textColor="@color/text_color_default"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                />
+        </LinearLayout>
+      <!--  <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1.5"
+            android:id="@+id/linearcancel">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:src="@drawable/ic_cancel_dialog"/>
+            <TextView
+                android:id="@+id/textviewCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:text="Cancel"
+                android:textSize="@dimen/text_order_title_size"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+               />
+        </LinearLayout>-->
+       <!-- <Button
+            android:id="@+id/textviewSearch"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Search"
+            android:textSize="@dimen/text_item_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/layout_margin_5dp"
+            android:background="@android:color/transparent"/>
+
+
+        <TextView
+            android:id="@+id/textviewFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Filter"
+            android:textSize="@dimen/text_item_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/layout_margin_5dp"
+            />
+
+        <TextView
+            android:id="@+id/textviewCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="@dimen/text_item_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/layout_margin_5dp"/>
+-->
+
+    </LinearLayout>
+    </LinearLayout>
+

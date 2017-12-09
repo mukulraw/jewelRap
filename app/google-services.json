@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "408379477416",
+    "firebase_url": "https://jewelrap-1063.firebaseio.com",
+    "project_id": "jewelrap-1063",
+    "storage_bucket": "jewelrap-1063.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408379477416:android:6c2487501fd3424c",
+        "android_client_info": {
+          "package_name": "com.quixom.jewelrap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408379477416-mgmbfgk04uofibdpl22ot8ct8ibj2con.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.quixom.jewelrap",
+            "certificate_hash": "8A836E20DA1DD235AE36FCCFC07A484AB520DB7D"
+          }
+        },
+        {
+          "client_id": "408379477416-8gsd5jurgmnprail61hk0n29u870qun1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLaGxWiSQFsHUVlkBWnNBc7AYhxXB-dR8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408379477416-8gsd5jurgmnprail61hk0n29u870qun1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

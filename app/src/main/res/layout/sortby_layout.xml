@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/reveal_items" android:orientation="horizontal"
+    android:background="#9b000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+      >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Discount %"
+            android:textColor="#CBD4D9"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/sortby_discount"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#CBD4D9"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"></View>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/price"
+            android:textColor="#CBD4D9"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            android:id="@+id/sortby_price"/>
+
+        <!--  <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/imageView"
+              android:src="@drawable/ic_launcher"/>
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/imageView2"
+              android:src="@drawable/ic_launcher"/>-->
+    </LinearLayout>
+</LinearLayout>

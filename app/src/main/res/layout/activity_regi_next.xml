@@ -1,0 +1,364 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgorud_color_lightblue"
+    >
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+
+        ></android.support.v7.widget.Toolbar>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/jewelrapimage"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_new" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:orientation="vertical"
+
+            >
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_crosshairs_gps_black_24dp" />
+
+                       <!-- <EditText
+                            android:id="@+id/edit_text_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="State"
+                            android:inputType="text"
+                            android:textColor="@color/light_grey"
+                            android:textColorHint="@color/light_grey" />-->
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/spinnerState"
+                            android:prompt="@string/prompt_state"
+                            android:spinnerMode="dialog"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_map_marker_black_24dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                          <!--  <AutoCompleteTextView
+                                android:id="@+id/autoCompleteTextViewCity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.7"
+                                android:ems="10"
+                                android:hint="City"
+                                android:textColor="@color/Black"
+                                android:textColorHint="@color/light_grey" />-->
+                            <Spinner
+                                android:layout_width="0dp"
+                                android:layout_weight="0.7"
+                                android:layout_height="match_parent"
+                                android:id="@+id/spinnerCity"
+                                android:prompt="@string/prompt_city"
+                                android:spinnerMode="dialog"
+
+                                />
+                            <EditText
+                                android:id="@+id/edit_text_pincode"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:hint="Pincode"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:textColor="@color/light_grey"
+                                android:textColorHint="@color/light_grey" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linearQbc"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_phone_gray" />
+
+                        <EditText
+                            android:id="@+id/edit_qbc_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Qbc number"
+                            android:maxLength="11"
+                            android:inputType="number"
+                            android:textColor="@color/light_grey"
+                            android:textColorHint="@color/light_grey" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/tin_num" />
+
+                        <EditText
+                            android:id="@+id/edit_tin_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Tin number"
+                            android:maxLength="11"
+                            android:inputType="text"
+                            android:textColor="@color/light_grey"
+                            android:textColorHint="@color/light_grey" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:src="@drawable/i_am" />
+
+                            <TextView
+                                android:id="@+id/edit_text_userrole"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_gravity="center"
+                                android:text="I am..."
+                                android:textColor="@color/light_grey"
+
+                                />
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/radiogroupreg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true">
+
+                            <RadioButton
+                                android:id="@+id/radioButton1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Retailer"
+                                android:textColor="@color/light_grey"
+
+                                />
+
+                            <RadioButton
+                                android:id="@+id/radioButton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wholesaler"
+                                android:layout_marginLeft="@dimen/layout_margin_5dp"
+                                android:textColor="@color/light_grey" />
+                            <RadioButton
+                                android:id="@+id/radioButtonBroker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Broker"
+                                android:visibility="gone"
+                                android:layout_marginLeft="@dimen/layout_margin_5dp"
+                                android:textColor="@color/light_grey" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearusercheckbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btn_solitaire"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/layout_margin_5dp"
+                            android:layout_marginRight="@dimen/layout_margin_5dp"
+                            android:layout_marginTop="@dimen/layout_margin_5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_corner"
+                            android:onClick="onClick"
+                            android:text="Solitaire"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/layout_margin"
+                            android:visibility="gone"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_loosediamonds"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/layout_margin_5dp"
+                            android:layout_marginRight="@dimen/layout_margin_5dp"
+                            android:layout_marginTop="@dimen/layout_margin_5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_corner"
+                            android:onClick="onClick"
+                            android:text="Loose Diamonds"
+                            android:textColor="@color/white"
+                            android:visibility="gone"
+                            android:textSize="10sp"
+
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_diamondjewellery"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/layout_margin_5dp"
+                            android:layout_marginRight="@dimen/layout_margin_5dp"
+                            android:layout_marginTop="@dimen/layout_margin_5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_corner"
+                            android:onClick="onClick"
+                            android:text="Diamond Jewellery"
+                            android:textColor="@color/white"
+                            android:visibility="gone"
+                            android:textSize="10sp"
+
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_goldjewellery"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/layout_margin_5dp"
+                            android:layout_marginRight="@dimen/layout_margin_5dp"
+                            android:layout_marginTop="@dimen/layout_margin_5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_corner"
+                            android:onClick="onClick"
+                            android:text="Gold Jewellery"
+                            android:textColor="@color/white"
+                            android:visibility="gone"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                        <Button
+                            android:id="@+id/btn_silver"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/layout_margin_5dp"
+                            android:layout_marginRight="@dimen/layout_margin_5dp"
+                            android:layout_marginTop="@dimen/layout_margin_5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_corner"
+                            android:onClick="onClick"
+                            android:text="Silver"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/layout_margin"
+                            android:visibility="gone"
+                            android:textStyle="bold" />
+                        <Button
+                            android:id="@+id/btn_colorstone"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/layout_margin_5dp"
+                            android:layout_marginRight="@dimen/layout_margin_5dp"
+                            android:layout_marginTop="@dimen/layout_margin_5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_corner"
+                            android:onClick="onClick"
+                            android:text="Color Stone"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/layout_margin"
+                            android:visibility="gone"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </ScrollView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin"
+            android:background="@drawable/ripple"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </TableLayout>
+
+</RelativeLayout>

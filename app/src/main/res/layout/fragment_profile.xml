@@ -1,0 +1,332 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgorud_color_lightblue"
+              android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/linearlayoutprofile"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        android:weightSum="5">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/layout_margin"
+            android:layout_weight="4.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_margin"
+                    android:text="Update profile : "
+                    android:textColor="@color/Black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <com.github.siyamed.shapeimageview.CircularImageView
+                            android:id="@+id/profileview"
+                            android:layout_width="130dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="@dimen/layout_margin"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_launcher" />
+
+                        <ImageView
+                            android:id="@+id/profileeditimage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignRight="@+id/profileview"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/ic_profile_edit"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:id="@+id/imageViewemail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_mail_ru_black_24dp" />
+
+                    <EditText
+                        android:id="@+id/edit_text_email_id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.5"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/Black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_key_black_24dp" />
+
+                    <EditText
+                        android:id="@+id/edit_text_password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.5"
+                        android:fontFamily="default"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/Black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:id="@+id/imageViewphone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_phone_black_24dp" />
+
+                    <EditText
+                        android:id="@+id/edit_text_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.5"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:hint="Phone number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColor="@color/Black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:id="@+id/imageViewlandline"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_landline" />
+
+                    <EditText
+                        android:id="@+id/edit_text_landline"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.5"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:hint="Landline number"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textColor="@color/Black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:id="@+id/imageViewaddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_map_marker_black_24dp" />
+
+                    <EditText
+                        android:id="@+id/edit_text_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.5"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:hint="Address"
+                        android:inputType="textMultiLine"
+                        android:maxLines="6"
+                        android:textColor="@color/Black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:id="@+id/imageViewgps"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_crosshairs_gps_black_24dp" />
+
+                    <!--<EditText
+                        android:id="@+id/edit_text_state"
+                        android:layout_width="0dp"
+                        android:layout_weight="4.5"
+                        android:layout_height="wrap_content"
+                        android:hint="State"
+                        android:inputType="text"
+                        android:textColor="@color/Black"
+                         />-->
+                    <Spinner
+                        android:id="@+id/spinnerState"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5"
+                        android:prompt="@string/prompt_state"
+                        android:spinnerMode="dialog"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:id="@+id/imageViewmarker"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_map_marker_black_24dp" />
+
+                    <!-- <AutoCompleteTextView
+                         android:id="@+id/autoCompleteTextViewCity"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="3"
+                         android:ems="10"
+                         android:hint="City"
+                         android:inputType="text"
+                         android:textColor="@color/Black"
+                         />-->
+                    <Spinner
+                        android:id="@+id/spinnerCity"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:prompt="@string/prompt_city"
+                        android:spinnerMode="dialog"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/edit_text_pincode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:hint="Pincode"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textColor="@color/Black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/changepasswordtextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Change password"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/layout_margin"
+            android:layout_weight="0.5"
+            android:gravity="bottom"
+
+            android:orientation="vertical">
+
+            <Button
+
+                android:id="@+id/btnupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+
+                android:background="@drawable/ripple"
+                android:text="Update "
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    android:background="@drawable/button_border">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/layout_margin"
+
+
+
+        >
+<ImageView
+    android:id="@+id/recyclerCheckboxImg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_launcher"
+    android:layout_weight="0.5"
+    />
+    <TextView
+        android:layout_weight="4"
+        android:id="@+id/textCheckbox"
+        android:text="CheckboxText"
+
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+    <CheckBox
+
+        android:id="@+id/checkbox"
+        android:layout_gravity="center"
+        android:button="@drawable/bluecheckboxselection"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardInvetoryStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5">
+
+                <ImageView
+                    android:id="@+id/invetoryImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="@dimen/margin_8dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/stockInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2.5"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="7.5"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="2"
+
+                        android:weightSum="10">
+
+                        <TextView
+                            style="@style/stockTitle"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text=" Cut "/>
+
+                        <TextView
+                            android:id="@+id/invetoryCut"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center|left"/>
+
+                        <TextView
+                            style="@style/stockTitle"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text=" Flour "/>
+
+                        <TextView
+                            android:id="@+id/invetoryFlour"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center|left"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="2"
+                        android:weightSum="10">
+
+                        <TextView
+                            style="@style/stockTitle"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text=" Pol "/>
+
+                        <TextView
+                            android:id="@+id/invetoryPol"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center|left"/>
+
+                        <TextView
+                            style="@style/stockTitle"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text=" Meas. "/>
+
+                        <TextView
+                            android:id="@+id/invetoryMeas"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center|left"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="2"
+                        android:weightSum="10">
+
+                        <TextView
+                            style="@style/stockTitle"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text=" Sym "/>
+
+                        <TextView
+                            android:id="@+id/invetorySym"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center|left"/>
+
+                        <TextView
+                            style="@style/stockTitle"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center|left"
+                            android:text=" Cert "/>
+
+                        <TextView
+                            android:id="@+id/invetoryCert"
+                            android:layout_width="0dip"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center|left"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

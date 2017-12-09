@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/layout_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="Place Enquiry"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_item_size" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_top_bottom"
+            android:layout_marginTop="@dimen/margin_order_dialog"
+            android:weightSum="5"
+            android:id="@+id/linear_shape">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="Shape"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_order_title_size" />
+
+            <TextView
+                android:id="@+id/tv_order_shape"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="left"
+
+                android:text=""
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_order_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_top_bottom"
+            android:layout_marginTop="@dimen/margin_order_dialog"
+            android:weightSum="5"
+            android:id="@+id/linear_color"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="Color"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_order_title_size" />
+
+            <TextView
+                android:id="@+id/tv_order_color"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_order_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_top_bottom"
+            android:layout_marginTop="@dimen/margin_order_dialog"
+            android:weightSum="5"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="Size"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_order_title_size" />
+
+            <TextView
+                android:id="@+id/tv_order_size"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_order_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_purity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_top_bottom"
+            android:layout_marginTop="@dimen/margin_order_dialog"
+            android:weightSum="5"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="Purity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_order_title_size" />
+
+            <TextView
+                android:id="@+id/tv_order_purity"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_order_title_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_certificate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_top_bottom"
+            android:layout_marginTop="@dimen/margin_order_dialog"
+            android:weightSum="5"
+            android:visibility="gone"
+           >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="Certificate"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_order_title_size"
+                />
+
+            <TextView
+                android:id="@+id/tv_order_certificate"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_order_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_top_bottom"
+            android:layout_marginTop="@dimen/margin_order_dialog"
+            android:weightSum="5"
+            android:id="@+id/linear_pair"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="Pair"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_order_title_size" />
+
+            <TextView
+                android:id="@+id/tv_order_pair"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_order_title_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_top_bottom"
+            android:layout_marginTop="@dimen/margin_order_dialog"
+            android:weightSum="5"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="Weight"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_order_title_size" />
+
+            <TextView
+                android:id="@+id/tv_order_weight"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_order_title_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_top_bottom"
+            android:layout_marginTop="@dimen/margin_order_dialog"
+            android:weightSum="5"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="Quantity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_order_title_size" />
+
+            <TextView
+                android:id="@+id/tv_order_quantity"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_order_title_size" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_top_bottom"
+            android:layout_marginTop="@dimen/margin_order_dialog"
+            android:weightSum="5"
+            android:id="@+id/linear_price">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_order_title_size" />
+
+            <TextView
+                android:id="@+id/tv_order_price"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_order_title_size" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_top_bottom"
+            android:layout_marginTop="@dimen/margin_order_dialog"
+            android:weightSum="5"
+            android:id="@+id/linear_description">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_order_title_size" />
+
+            <TextView
+                android:id="@+id/tv_order_description"
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:scrollbars="vertical"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:maxLines="10"
+                android:textColor="@color/text_color_default"
+                android:textSize="@dimen/text_order_title_size" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_order_dialog"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/btn_order_cancel"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_order_dialog"
+                android:layout_weight="2.5"
+                android:background="@drawable/ripple"
+                android:text="Cancel"
+                android:textSize="17dp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_order_place"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_order_dialog"
+                android:layout_weight="2.5"
+                android:background="@drawable/ripple"
+                android:text="Place Enquiry"
+                android:textSize="17dp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

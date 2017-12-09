@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" >
+
+        <layer-list>
+        <item>
+            <shape android:shape="rectangle">
+                <solid android:color="#b9cad1"/>
+
+            </shape>
+        </item>
+
+        <item
+            android:left="4dp"
+            android:right="4dp"
+            android:top="4dp"
+            android:bottom="4dp">
+            <shape android:shape="rectangle">
+                <solid android:color="#DDE3E8"/>
+
+            </shape>
+        </item>
+        </layer-list>
+    </item>
+    <item android:drawable="@color/colorPrimary" ></item>
+</selector>
+

@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools" tools:context="com.quixom.jewelrap.MainActivity"
+   >
+
+    <item
+        android:id="@+id/newbadge"
+        app:actionLayout="@layout/newsbadge_layout"
+        android:title="Badges"
+        app:showAsAction="always"
+    >
+     </item>
+    <item
+        android:id="@+id/badge"
+        app:actionLayout="@layout/badge_layout"
+        android:title="Badges"
+        app:showAsAction="always"
+    >
+    </item>
+
+</menu>

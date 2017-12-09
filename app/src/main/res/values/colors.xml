@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--DFF0FD-->
+    <color name="Grey">#e8e8e8</color>
+    <color name="gray_background">#97e8e8e8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary">#4169E1</color>
+    <color name="colorPrimaryDark">#3646E0</color>
+    <color name="colorSecondary">#5C85FF</color>
+    <color name="bgGreenButton">#B6D7A8</color>
+    <color name="bgBlue">#DDE3E8</color>
+    <color name="cardSelectedColor">#4F6A8C</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="bgCardColor">#597EAA</color>
+    <color name="light_grey">#424242</color>
+    <color name="stock_title_black">#2e2d2d</color>
+    <color name="icon_gray">#747474</color>
+    <color name="light_pink">#3cffb6c1</color>
+    <!--DFF0FD--> <!--CDE7FD-->
+    <color name="backgorud_color_lightblue">#DFF0FD</color>
+    <color name="light_white">#EEEEEE</color>
+    <color name="tab_top">#26000000</color>
+    <color name="light_bg">#0C000000</color>
+    <color name="Black">#000000</color>
+    <color name="light_blue">#b9cad1</color>
+    <color name="Red">#BF1000</color>
+    <color name="redbadge">#FFF71904</color>
+    <color name="text_color">#737373</color>
+    <color name="black">#000000</color>
+    <color name="text_color_overlay">#1988FE</color>
+    <color name="text_color_default">#737373</color>
+
+    <color name="text_border_color">#D4D4D4</color>
+
+    <color name="transparent_black">#99000000</color>
+    <color name="transparent">#FF000000</color>
+    <color name="transparent_total">#00000000</color>
+
+    <color name="mild_red">#FF9696</color>
+</resources>

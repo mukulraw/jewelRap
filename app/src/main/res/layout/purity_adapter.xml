@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+
+    >
+
+    <LinearLayout
+        android:paddingBottom="@dimen/layout_margin_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/layout_margin_5dp"
+        android:paddingLeft="@dimen/layout_margin_5dp"
+       >
+    <TextView
+        android:id="@+id/tv_purity_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="IF"
+        android:textColor="@color/text_color_default"
+        android:textSize="@dimen/purity_text_title_size"
+        android:textStyle="bold"
+        />
+    </LinearLayout>
+</RelativeLayout>

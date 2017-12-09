@@ -1,0 +1,398 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgBlue"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+
+        >
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="category title"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15sp"
+                        android:gravity="center"
+                        android:shrinkColumns="*">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10sp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingBottom="5sp"
+                                android:paddingTop="5sp"
+                                android:text="Select Shape"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerViewCheckbox"
+                            android:layout_width="match_parent"
+
+
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false" />
+
+                        <LinearLayout
+                            android:layout_marginTop="10sp"
+                            android:id="@+id/colorpuritylinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10sp"
+                                android:background="@drawable/button_border"
+                                android:gravity="center">
+
+
+                                <Spinner
+                                    android:id="@+id/certification_spinner"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30sp"
+                                    android:gravity="center_horizontal"></Spinner>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tv_select_color"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingBottom="5sp"
+                                    android:paddingTop="5sp"
+                                    android:text="Select Color"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10sp"
+                                android:background="@drawable/button_border"
+                                android:gravity="center">
+
+
+                                <Spinner
+                                    android:id="@+id/from_color_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30sp"
+                                    android:layout_weight="1"></Spinner>
+
+
+                                <Spinner
+                                    android:id="@+id/to_color_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30sp"
+                                    android:layout_weight="1"></Spinner>
+
+                            </TableRow>
+
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tv_select_purity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingBottom="5sp"
+                                    android:paddingTop="5sp"
+                                    android:text="Select Purity"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10sp"
+                                android:background="@drawable/button_border"
+                                android:gravity="center">
+
+                                <Spinner
+                                    android:id="@+id/from_purity_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30sp"
+                                    android:layout_weight="1"></Spinner>
+
+
+                                <Spinner
+                                    android:id="@+id/to_purity_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30sp"
+                                    android:layout_weight="1"></Spinner>
+
+                            </TableRow>
+
+
+
+
+
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10sp"
+                                android:background="@drawable/button_border"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:id="@+id/linLayout_size"
+                                    android:layout_width="150sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/from_size"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:text="From"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:id="@+id/edit_form_size"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="numberDecimal"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linLayout_size1"
+                                    android:layout_width="150sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/to_size"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:text="To"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+
+                                    <EditText
+                                        android:id="@+id/edit_to_size"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="numberDecimal"
+                                        android:textSize="15sp" />
+
+
+                                </LinearLayout>
+                            </TableRow>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearSize"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+
+                           >
+
+                            <TextView
+                                android:id="@+id/tv_select_size"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingBottom="5sp"
+                                android:paddingTop="5sp"
+                                android:text="Select Size"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerViewCheckboxSize"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clipToPadding="false"
+
+                                />
+                        </LinearLayout>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingBottom="5sp"
+                                android:paddingTop="5sp"
+                                android:text="@string/price"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10sp"
+                            android:gravity="center">
+
+                            <EditText
+                                android:id="@+id/etPrice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_border"
+                                android:inputType="number|numberDecimal"
+
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingBottom="5sp"
+                                android:paddingTop="5sp"
+                                android:text="Description"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10sp"
+                            android:gravity="center">
+
+                            <EditText
+
+                                android:id="@+id/etdescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/button_border"
+
+                                android:gravity="top"
+                                android:inputType="textMultiLine|textImeMultiLine"
+                                android:lines="4"
+                                android:maxLength="150"
+                                android:maxLines="100"
+                                android:textSize="20sp" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/buttonPrev"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:text="Previous"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/buttonNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:text="Next"
+                        android:textColor="@color/white" />
+
+
+                </TableRow>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

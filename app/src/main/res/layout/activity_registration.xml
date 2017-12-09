@@ -1,0 +1,258 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgorud_color_lightblue"
+    tools:context="com.quixom.jewelrap.Registration">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:id="@+id/toolbar">
+        </android.support.v7.widget.Toolbar>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+   >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_new"
+            android:id="@+id/jewelrapimage"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+
+        android:layout_weight="1"
+        android:gravity="center"
+
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jewelrapimage"
+      >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_margin="10sp"
+
+
+            >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_margin="10sp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_company_24dp" />
+
+            <EditText
+                android:id="@+id/edit_text_firmName"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/light_grey"
+                android:textColor="@color/light_grey"
+                android:hint="Company name"
+                android:inputType="text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_account_black_24dp" />
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <EditText
+                    android:id="@+id/edit_text_firstname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                    android:textColorHint="@color/light_grey"
+                    android:textColor="@color/light_grey"
+                    android:hint="Firstname"
+                    android:inputType="text"
+                    />
+            <EditText
+                android:id="@+id/edit_text_lastname"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/light_grey"
+                android:textColor="@color/light_grey"
+                android:hint="Lastname"
+                android:inputType="text"/>
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_key_black_24dp" />
+                <EditText
+                    android:id="@+id/edit_text_password"
+                    android:fontFamily="default"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/light_grey"
+                    android:textColor="@color/light_grey"
+                    android:hint="Password"
+                    android:inputType="textPassword"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_key_black_24dp" />
+                <EditText
+                    android:id="@+id/edit_text_password_conform"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/light_grey"
+                    android:textColor="@color/light_grey"
+                    android:hint="Re-Password"
+                    android:fontFamily="default"
+                    android:inputType="textPassword"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_mail_ru_black_24dp" />
+
+            <EditText
+                android:id="@+id/edit_text_email_id"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/light_grey"
+                android:textColor="@color/light_grey"
+                android:hint="Email"
+                android:inputType="textEmailAddress"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_phone_gray" />
+            <EditText
+                android:id="@+id/edit_text_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/light_grey"
+                android:textColor="@color/light_grey"
+                android:hint="Phone number"
+                android:inputType="number"
+                android:maxLength="10"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_landline" />
+            <EditText
+                android:id="@+id/edit_text_landline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/light_grey"
+                android:textColor="@color/light_grey"
+                android:hint="Landline number"
+                android:inputType="number"
+                android:maxLength="11"
+               />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_map_marker_black_24dp" />
+
+            <EditText
+                android:id="@+id/edit_text_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/light_grey"
+                android:textColor="@color/light_grey"
+                android:hint="Address"
+                android:inputType="textMultiLine"/>
+        </LinearLayout>
+    </LinearLayout>
+
+            <Button
+                android:text="Next"
+                android:id="@+id/buttonnextreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</TableLayout>
+</RelativeLayout>

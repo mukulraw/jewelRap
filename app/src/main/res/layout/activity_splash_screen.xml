@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context=".SplashScreen"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_gravity="left"
+            android:layout_weight="1.5"
+            android:src="@drawable/star_256_256" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="2"></LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:src="@drawable/diamond_star_512_512"
+            android:layout_weight="1.5" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/logo_600_171"
+            android:layout_weight="1.5"
+            android:layout_gravity="center"
+            android:layout_height="0dip" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2.5"
+            android:layout_height="0dip"></LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_weight="0.6"
+            android:layout_gravity="center"
+            android:src="@drawable/iconic_solution_600_70"
+            android:layout_height="0dip" />
+    </LinearLayout>
+</RelativeLayout>
