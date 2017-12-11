@@ -19,7 +19,7 @@ public class Global_variable {
 
    // public static String base_url = "http://jewelrap.com";
 
-    public static String base_url = "http://jewelrap.affixwebsolution.com/";
+    public static String base_url = "http://jewelrap.affixwebsolution.com";
 
     public static String login_api = base_url + "/user/login/";
     public static String signup_api = base_url + "/user/signup/";

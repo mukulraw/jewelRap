@@ -113,6 +113,7 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
                 R.drawable.ic_feedback,
                 R.drawable.ic_aboutus,
                 R.drawable.ic_contactus,
+                R.drawable.rupee,
                 R.drawable.ic_profile,
                 R.drawable.ic_logout
         };

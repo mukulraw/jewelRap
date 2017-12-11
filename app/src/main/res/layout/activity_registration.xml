@@ -250,6 +250,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/ripple"
                 android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
                 android:textStyle="bold"/>
     </LinearLayout>
     </ScrollView>

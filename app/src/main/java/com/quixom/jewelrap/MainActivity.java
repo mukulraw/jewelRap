@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         relativeLayoutdrawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavigationDrawerAdapter.selected_item=8;
+                NavigationDrawerAdapter.selected_item = 8;
                 drawerFragment.adapterNotify();
                 displayView(8);
                 drawerLayout.closeDrawer(Gravity.LEFT);
@@ -302,11 +302,33 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
                 pos = 7;
                 break;
             case 8:
-                fragment = new ProfileFragment();
-                title = getString(R.string.title_profile);
-                pos = 8;
+
+                //refer
+
+                try {
+                    Intent intent1 = new Intent(Intent.ACTION_SEND);
+                    intent1.setType("text/plain");
+                    intent1.putExtra(Intent.EXTRA_SUBJECT, "My application name");
+                    String sAux = "\nLet me recommend you this application\n\n";
+                    sAux = sAux + "https://play.google.com/store/apps/details?id=com.quixom.jewelrap&referrer=" + sharedPreferences.getString(SessionManager.UNIQUEID, null) +  "\n\n";
+
+                    Log.d("asdasd" , sAux);
+
+                    intent1.putExtra(Intent.EXTRA_TEXT, sAux);
+                    startActivity(Intent.createChooser(intent1, "choose one"));
+                } catch(Exception e) {
+                    //e.toString();
+                }
+
+
+
                 break;
             case 9:
+                fragment = new ProfileFragment();
+                title = getString(R.string.title_profile);
+                pos = 9;
+                break;
+            case 10:
 
                 title = getString(R.string.title_logout);
 
@@ -333,6 +355,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
                 dlgAlert.setCancelable(false);
                 dlgAlert.create().show();
                 break;
+
             default:
                 break;
         }

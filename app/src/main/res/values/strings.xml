@@ -36,8 +36,11 @@
     <string name="nav_item_feedback">Feedback</string>
     <string name="nav_item_aboutus">About Us</string>
     <string name="nav_item_contactus">Contact Us</string>
+    <string name="nav_item_refer">Refer &amp; Earn</string>
     <string name="nav_item_profile">Profile</string>
     <string name="nav_item_logout">Logout</string>
+
+
 
     <string-array name="nav_drawer_labels">
         <item>@string/nav_item_home</item>
@@ -48,9 +51,13 @@
         <item>@string/nav_item_feedback</item>
         <item>@string/nav_item_aboutus</item>
         <item>@string/nav_item_contactus</item>
+        <item>@string/nav_item_refer</item>
         <item>@string/nav_item_profile</item>
         <item>@string/nav_item_logout</item>
     </string-array>
+
+
+
     <string-array name="random_imgs">
         <item>@drawable/ic_solitaire</item>
         <item>@drawable/ic_loose</item>

@@ -91,6 +91,9 @@ public class RegiNextActivity extends AppCompatActivity implements View.OnClickL
     CheckBox chkTeamName;
     List<String> selectvalue;
     int i;
+
+    SharedPreferences pref;
+
     Button btnchecked;
     RadioGroup radioGroup;
     RadioButton radioButton_userrole, radioButton_broker;
@@ -264,6 +267,10 @@ public class RegiNextActivity extends AppCompatActivity implements View.OnClickL
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         setContentView(R.layout.activity_regi_next);
+
+        pref = getSharedPreferences("MyPrefs" , Context.MODE_PRIVATE);
+
+
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         selectedItems = new boolean[]{false, false, false, false,
         };
@@ -288,7 +295,7 @@ public class RegiNextActivity extends AppCompatActivity implements View.OnClickL
                     userrole = radioButton_userrole.getText().toString();
                 }
                 if (Global_variable.logEnabled) {
-                    Log.e(">>> Userrole :: setOnCheckedChangeListener", userrole);
+                    Log.e(">>> UserListener", userrole);
                 }
 
                 switch (id) {
@@ -477,7 +484,7 @@ public class RegiNextActivity extends AppCompatActivity implements View.OnClickL
     public void categorySelectionDialog(String role) {
         //String user_role=role;
         if (Global_variable.logEnabled) {
-            Log.e("cate str val:radiobutton2", cate_str);
+            Log.e("cate str val:ron2", cate_str);
             Log.e("userrole::radiobutton2", userrole);
         }
         dialog = new Dialog(RegiNextActivity.this, R.style.DesignDemo);
@@ -756,6 +763,7 @@ public class RegiNextActivity extends AppCompatActivity implements View.OnClickL
         restClientVolley.addParameter("pin", et_pincode.getText().toString());
         restClientVolley.addParameter("deviceId", deviceId);
         restClientVolley.addParameter("tnc", "1");
+        restClientVolley.addParameter("referral_code", pref.getString("refer" , ""));
         restClientVolley.executeRequest();
 
     }

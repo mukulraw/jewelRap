@@ -102,6 +102,9 @@ public class Registration extends AppCompatActivity {
                     in.putExtra("phone", phone);
                     in.putExtra("address", address);
                     in.putExtra("firmname",firmname);
+
+
+
                     if(et_landline.getText().length()>0){
                         checkEmptyTextValidatiotoLandlinenumber(et_landline);
                         if(et_landline.getError()==null) {

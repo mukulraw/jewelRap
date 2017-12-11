@@ -81,6 +81,7 @@ public class FragmentDrawer extends Fragment {
                 R.drawable.ic_feedback_black,
                 R.drawable.ic_aboutus_black,
                 R.drawable.ic_contactus_black,
+                R.drawable.rupee_black,
                 R.drawable.ic_profile_black,
                 R.drawable.ic_logout_black
         };

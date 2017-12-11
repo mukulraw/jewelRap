@@ -25,7 +25,7 @@ public class RestClientVolley {
 
     ContentValues headerValues, paramsValues;
     Map<String, String> header, params;
-    String TAG = "JEWELRAP";
+    String TAG = "jlajsdajsdkjlasd;k";
     VolleyCallBack callBack;
     ProgressDialog progressDialog;
     boolean visiblity;
@@ -99,11 +99,17 @@ public class RestClientVolley {
 
         RequestQueue requestQueue = Volley.newRequestQueue(mContext);
 
+
+        Log.d("asdasdURL" , URL);
+
         StringRequest request = new StringRequest(method, URL,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         callBack.processCompleted(response);
+
+                        Log.d("Asdasd" , response);
+
                         if ((progressDialog != null) && progressDialog.isShowing()) {
                             progressDialog.dismiss();
                         }
@@ -113,6 +119,9 @@ public class RestClientVolley {
                     public void onErrorResponse(NoConnectionError error) {
                         progressDialog.dismiss();
 
+
+                        Log.d("error" , error.getMessage());
+
                     }
 
                     @Override
@@ -120,7 +129,7 @@ public class RestClientVolley {
                         if ((progressDialog != null) && progressDialog.isShowing()) {
                             progressDialog.dismiss();
                         }
-                        Log.d(TAG, "error : " + error);
+                        Log.d(TAG, "error : " + error.getMessage());
                         String errormsg = "";
 
 
