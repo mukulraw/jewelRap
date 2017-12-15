@@ -11,11 +11,11 @@ android {
     buildToolsVersion '26.0.2'
 
     defaultConfig {
-        applicationId "com.quixom.jewelrap"
+        applicationId "com.quixomtbx.jewelrap"
         minSdkVersion 15
         targetSdkVersion sdkVersion
-        versionCode 18
-        versionName "2.6"
+        versionCode 19
+        versionName "2.7"
         multiDexEnabled true
     }
     buildTypes {

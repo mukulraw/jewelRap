@@ -33,7 +33,7 @@
             android:layout_weight="1.5" />
         <ImageView
             android:layout_width="match_parent"
-            android:src="@drawable/logo_600_171"
+            android:src="@drawable/tbx"
             android:layout_weight="1.5"
             android:layout_gravity="center"
             android:layout_height="0dip" />
@@ -45,6 +45,7 @@
             android:layout_width="match_parent"
             android:layout_weight="0.6"
             android:layout_gravity="center"
+            android:visibility="gone"
             android:src="@drawable/iconic_solution_600_70"
             android:layout_height="0dip" />
     </LinearLayout>

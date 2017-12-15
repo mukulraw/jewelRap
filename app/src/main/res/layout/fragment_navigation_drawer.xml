@@ -47,7 +47,6 @@
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/white"
                     android:id="@+id/tv_username"
-
                     android:layout_marginLeft="16dp"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -63,6 +62,23 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/tv_username" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    android:id="@+id/text"
+                    android:layout_marginLeft="16dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tv_uniqueId" />
+
+
+
+
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"

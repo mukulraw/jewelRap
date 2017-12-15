@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/backgorud_color_lightblue"
     android:orientation="vertical"
-    tools:context="com.quixom.jewelrap.InventoryActivity">
+    tools:context="com.quixomtbx.jewelrap.InventoryActivity">
 
     <include layout="@layout/action_bar"/>
 

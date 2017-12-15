@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
 
     android:id="@+id/relative_order"
-    tools:context="com.quixom.jewelrap.PlaceOrder">
+    tools:context="com.quixomtbx.jewelrap.PlaceOrder">
 
     <LinearLayout
         android:id="@+id/linlayout"

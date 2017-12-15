@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgorud_color_lightblue"
-    tools:context="com.quixom.jewelrap.Registration">
+    tools:context="com.quixomtbx.jewelrap.Registration">
 
     <android.support.v7.widget.Toolbar
         xmlns:android="http://schemas.android.com/apk/res/android"
