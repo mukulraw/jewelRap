@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/relative_order"
-    tools:context="com.quixomtbx.jewelrap.PlaceOrder">
+    tools:context="com.quixom.jewelrap.PlaceOrder">
 
     <ImageView
         android:id="@+id/image"

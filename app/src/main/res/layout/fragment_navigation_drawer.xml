@@ -87,11 +87,23 @@
                 android:orientation="vertical"
                 android:gravity="right"
                 android:padding="@dimen/layout_margin">
-                <com.github.siyamed.shapeimageview.CircularImageView
+               <!-- <com.github.siyamed.shapeimageview.CircularImageView
                     android:id="@+id/profile_image_drawer"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:src="@drawable/ic_launcher"/>
+-->
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_drawer"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_launcher"/>
+
+
+
 
             </LinearLayout>
         </LinearLayout>

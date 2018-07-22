@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               android:background="@color/backgorud_color_lightblue"
               android:orientation="vertical"
-              tools:context="com.quixomtbx.jewelrap.InvetoryFragment">
+              tools:context="com.quixom.jewelrap.InvetoryFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerViewStock"

@@ -33,7 +33,7 @@
             android:layout_weight="1.5" />
         <ImageView
             android:layout_width="match_parent"
-            android:src="@drawable/tbx"
+            android:src="@drawable/logo"
             android:layout_weight="1.5"
             android:layout_gravity="center"
             android:layout_height="0dip" />

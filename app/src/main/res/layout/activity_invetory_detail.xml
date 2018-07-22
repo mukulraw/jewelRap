@@ -9,7 +9,7 @@
     android:layout_height="match_parent"
     android:background="@color/backgorud_color_lightblue"
     android:orientation="vertical"
-    tools:context="com.quixomtbx.jewelrap.InvetoryDetail">
+    tools:context="com.quixom.jewelrap.InvetoryDetail">
     <include layout="@layout/action_bar"/>
 
     <ScrollView

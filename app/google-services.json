@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:408379477416:android:6c2487501fd3424c",
         "android_client_info": {
-          "package_name": "com.quixomtbx.jewelrap"
+          "package_name": "com.quixom.jewelrap"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "408379477416-mgmbfgk04uofibdpl22ot8ct8ibj2con.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.quixomtbx.jewelrap",
+            "package_name": "com.quixom.jewelrap",
             "certificate_hash": "8A836E20DA1DD235AE36FCCFC07A484AB520DB7D"
           }
         },

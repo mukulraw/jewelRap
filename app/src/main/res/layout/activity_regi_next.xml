@@ -168,8 +168,8 @@
                             android:id="@+id/edit_tin_number"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Tin number"
-                            android:maxLength="11"
+                            android:hint="GST No."
+                            android:maxLength="15"
                             android:inputType="text"
                             android:textColor="@color/light_grey"
                             android:textColorHint="@color/light_grey" />
@@ -344,6 +344,43 @@
                             android:visibility="gone"
                             android:textStyle="bold" />
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:text="You Have A Referral Code"
+                            android:layout_margin="5dp"/>
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="12dp"
+                       android:layout_marginRight="8dp"
+                        android:id="@+id/switch_btn"
+                        />
+
+                    </LinearLayout>
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rounded_border"
+                        android:hint="Enter referral code for get JR Points"
+                        android:id="@+id/refer_code"
+                        android:textSize="12sp"
+                       android:visibility="gone"
+                        android:maxLines="1"
+
+
+                        />
                 </LinearLayout>
 
 
